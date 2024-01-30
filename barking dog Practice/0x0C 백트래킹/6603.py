@@ -12,11 +12,9 @@ def backTrack(start, ar):
 while True:
     l = list(map(int, input().split()))
     k = l[0]
-    s = []
+    s = l[1:]
     if k == 0:
         break
-    for i in range(1, k+1):
-        s.append(l[i])
     backTrack(0, arr)
     print()
 
